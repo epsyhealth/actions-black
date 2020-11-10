@@ -1,0 +1,12 @@
+name: 'Black Code Formatter'
+description: 'Format Python code using black'
+inputs:
+  args:
+    description: 'Additional arguments to be passed to black'
+    required: false
+    default: '.'
+runs:
+  using: 'docker'
+  image: 'epsyhealth/action-black'
+  args:
+    - ${{ inputs.args }}
