@@ -7,6 +7,6 @@ inputs:
     default: '.'
 runs:
   using: 'docker'
-  image: 'docker://epsyhealth/action-black:latest'
+  image: 'docker://epsyhealth/actions-black:latest'
   args:
     - ${{ inputs.args }}
